@@ -14,7 +14,7 @@ Ouvrir_google
 Charger_la_page_Amazon
     Clear Element Text  xpath://*[@id="APjFqb"]
 
-    Input Text  xpath://*[@id="APjFqb"]  kikuu
+    Input Text  xpath://*[@id="APjFqb"]  amazon
 
     #Mouse Down  xpath:/html/body/div[2]/div[3]/div
 
@@ -24,10 +24,15 @@ Charger_la_page_Amazon
 
     Wait Until Page Contains Images
 
-    Click Link xpath://*[@id="_oWEQadGNAZOTwbkPsbLSoAQ_44"]
+    Click Link xpath://*[@id="_a3EQafD9C8Dc5OUP-PicsA8_40"]
+
 Rechercher_un_produit
     Click Element  name="field-keywords"
+
     Clear Element Text  name="field-keywords"
+
     Input Text  name="field-keywords"  ordinateur
+
     Click Element  xpath://*[@id="nav-search-submit-button"]
+
     Wait Until Page Contains  ordinateur
