@@ -1,3 +1,3 @@
 *** Variables ***
-${Browser_Name} =  edge
+${Browser_Name} =  Edge
 ${URL_Navigate} =  https://www.google.com/
