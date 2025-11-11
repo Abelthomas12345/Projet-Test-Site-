@@ -11,6 +11,7 @@ Resource  variables.robot
 
 ouverture_du_navigateur
     Open Browser  about:blank  ${Browser_Name}
+    
     Maximize Browser Window
 
 Fermeture_du_navigateur

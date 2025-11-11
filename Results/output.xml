@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.2 on win32)" generated="2025-11-10T19:26:31.207915" rpa="false" schemaversion="5">
+<suite id="s1" name="Projet-Test-Site-" source="C:\Users\ABEL\Desktop\SUPPORT DE COURS GLO4\Projet  Test_et_Validation\Projet_robot_Framework\Projet-Test-Site-">
+<suite id="s1-s1" name="Tests" source="C:\Users\ABEL\Desktop\SUPPORT DE COURS GLO4\Projet  Test_et_Validation\Projet_robot_Framework\Projet-Test-Site-\Tests">
+<suite id="s1-s1-s1" name="Main" source="C:\Users\ABEL\Desktop\SUPPORT DE COURS GLO4\Projet  Test_et_Validation\Projet_robot_Framework\Projet-Test-Site-\Tests\main.robot">
+<kw name="ouverture_du_navigateur" owner="commandes" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-10T19:26:31.779776" level="INFO">Opening browser 'edge' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${Browser_Name}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-10T19:26:31.779206" elapsed="2.251560"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-10T19:26:34.031498" elapsed="0.114021"/>
+</kw>
+<status status="PASS" start="2025-11-10T19:26:31.777944" elapsed="2.368073"/>
+</kw>
+<test id="s1-s1-s1-t1" name="Main Test" line="14">
+<kw name="Charger_directement_la_page_Amazon" owner="PageAcceuil">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-11-10T19:26:34.162567" level="INFO">Opening url 'https://www.google.com/'</msg>
+<arg>${URL_Navigate}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-11-10T19:26:34.161841" elapsed="112.206210"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<msg time="2025-11-10T19:28:26.615728" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-11-10T19:28:26.616504" level="FAIL">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression /html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1] timeout=30s because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '/html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1] timeout=30s' is not a valid XPath expression.
+  (Session info: MicrosoftEdge=142.0.3595.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6b22a9a65
+	0x7ff6b22a9ac4
+	0x7ff6b245b8a8
+	0x7ff6b202333f
+	0x7ff6b20256cf
+	0x7ff6b202578f
+	0x7ff6b2063c0e
+	0x7ff6b206431b
+	0x7ff6b20a07a7
+	0x7ff6b205b3d5
+	0x7ff6b209e6f2
+	0x7ff6b205a8aa
+	0x7ff6b2059bd1
+	0x7ff6b205a6d3
+	0x7ff6b21165f4
+	0x7ff6b2112b17
+	0x7ff6b22d66c5
+	0x7ff6b22c4b21
+	0x7ff6b22ccfc9
+	0x7ff6b22b0fb4
+	0x7ff6b22b1103
+	0x7ff6b229ee36
+	0x7ffa3f15e8d7
+	0x7ffa3f92c53c
+</msg>
+<arg>xpath:/html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1] timeout=30s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="FAIL" start="2025-11-10T19:28:26.369664" elapsed="0.367702">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression /html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1] timeout=30s because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '/html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1] timeout=30s' is not a valid XPath expression.
+  (Session info: MicrosoftEdge=142.0.3595.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6b22a9a65
+	0x7ff6b22a9ac4
+	0x7ff6b245b8a8
+	0x7ff6b202333f
+	0x7ff6b20256cf
+	0x7ff6b202578f
+	0x7ff6b2063c0e
+	0x7ff6b206431b
+	0x7ff6b20a07a7
+	0x7ff6b205b3d5
+	0x7ff6b209e6f2
+	0x7ff6b205a8aa
+	0x7ff6b2059bd1
+	0x7ff6b205a6d3
+	0x7ff6b21165f4
+	0x7ff6b2112b17
+	0x7ff6b22d66c5
+	0x7ff6b22c4b21
+	0x7ff6b22ccfc9
+	0x7ff6b22b0fb4
+	0x7ff6b22b1103
+	0x7ff6b229ee36
+	0x7ffa3f15e8d7
+	0x7ffa3f92c53c
+</status>
+</kw>
+<kw name="Clear Element Text" owner="SeleniumLibrary">
+<arg>xpath:/html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1]</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-11-10T19:28:26.737646" elapsed="0.000237"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>xpath:/html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1]</arg>
+<arg>Amazon</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-11-10T19:28:26.738041" elapsed="0.000185"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<arg>xpath:/html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" start="2025-11-10T19:28:26.738376" elapsed="0.000178"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>La page Amazon a été chargée avec succès.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2025-11-10T19:28:26.738715" elapsed="0.000181"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<arg>page_acceuil_amazon.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="NOT RUN" start="2025-11-10T19:28:26.739050" elapsed="0.000180"/>
+</kw>
+<status status="FAIL" start="2025-11-10T19:26:34.155848" elapsed="112.583582">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression /html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1] timeout=30s because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '/html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1] timeout=30s' is not a valid XPath expression.
+  (Session info: MicrosoftEdge=142.0.3595.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6b22a9a65
+	0x7ff6b22a9ac4
+	0x7ff6b245b8a8
+	0x7ff6b202333f
+	0x7ff6b20256cf
+	0x7ff6b202578f
+	0x7ff6b2063c0e
+	0x7ff6b206431b
+	0x7ff6b20a07a7
+	0x7ff6b205b3d5
+	0x7ff6b209e6f2
+	0x7ff6b205a8aa
+	0x7ff6b2059bd1
+	0x7ff6b205a6d3
+	0x7ff6b21165f4
+	0x7ff6b2112b17
+	0x7ff6b22d66c5
+	0x7ff6b22c4b21
+	0x7ff6b22ccfc9
+	0x7ff6b22b0fb4
+	0x7ff6b22b1103
+	0x7ff6b229ee36
+	0x7ffa3f15e8d7
+	0x7ffa3f92c53c
+</status>
+</kw>
+<status status="FAIL" start="2025-11-10T19:26:34.146377" elapsed="112.593491">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression /html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1] timeout=30s because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '/html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1] timeout=30s' is not a valid XPath expression.
+  (Session info: MicrosoftEdge=142.0.3595.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6b22a9a65
+	0x7ff6b22a9ac4
+	0x7ff6b245b8a8
+	0x7ff6b202333f
+	0x7ff6b20256cf
+	0x7ff6b202578f
+	0x7ff6b2063c0e
+	0x7ff6b206431b
+	0x7ff6b20a07a7
+	0x7ff6b205b3d5
+	0x7ff6b209e6f2
+	0x7ff6b205a8aa
+	0x7ff6b2059bd1
+	0x7ff6b205a6d3
+	0x7ff6b21165f4
+	0x7ff6b2112b17
+	0x7ff6b22d66c5
+	0x7ff6b22c4b21
+	0x7ff6b22ccfc9
+	0x7ff6b22b0fb4
+	0x7ff6b22b1103
+	0x7ff6b229ee36
+	0x7ffa3f15e8d7
+	0x7ffa3f92c53c
+</status>
+</test>
+<kw name="Fermeture_du_navigateur" owner="commandes" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-10T19:28:26.755191" elapsed="3.440983"/>
+</kw>
+<status status="PASS" start="2025-11-10T19:28:26.754644" elapsed="3.441931"/>
+</kw>
+<doc>Simple example using SeleniumLibrary.</doc>
+<status status="FAIL" start="2025-11-10T19:26:31.282325" elapsed="118.914482"/>
+</suite>
+<status status="FAIL" start="2025-11-10T19:26:31.272821" elapsed="118.936052"/>
+</suite>
+<status status="FAIL" start="2025-11-10T19:26:31.218781" elapsed="119.016203"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Projet-Test-Site-" id="s1" pass="0" fail="1" skip="0">Projet-Test-Site-</stat>
+<stat name="Tests" id="s1-s1" pass="0" fail="1" skip="0">Projet-Test-Site-.Tests</stat>
+<stat name="Main" id="s1-s1-s1" pass="0" fail="1" skip="0">Projet-Test-Site-.Tests.Main</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

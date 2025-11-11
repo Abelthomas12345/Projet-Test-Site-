@@ -10,8 +10,7 @@ Resource  ../ressources/PO/PageAcceuil.robot
 Suite Setup  commandes.ouverture_du_navigateur
 Suite Teardown  commandes.Fermeture_du_navigateur
 
-*** Test Cases
+*** Test Cases ***
 Main Test
-    Ouvrir_google
-    Charger_la_page_Amazon
-
+    Charger_directement_la_page_Amazon
+    Rechercher_un_produit
