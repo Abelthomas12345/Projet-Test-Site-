@@ -1,178 +1,288 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.12.7 on win32)" generated="2025-11-11T03:07:32.393074" rpa="false" schemaversion="5">
+<robot generator="Robot 7.3.2 (Python 3.12.7 on win32)" generated="2025-11-11T03:14:08.616875" rpa="false" schemaversion="5">
 <suite id="s1" name="Tests" source="C:\Users\ABEL\Desktop\SUPPORT DE COURS GLO4\Projet  Test_et_Validation\Projet_robot_Framework\Projet-Test-Site-\tests">
 <suite id="s1-s1" name="Main" source="C:\Users\ABEL\Desktop\SUPPORT DE COURS GLO4\Projet  Test_et_Validation\Projet_robot_Framework\Projet-Test-Site-\tests\main.robot">
 <kw name="ouverture_du_navigateur" owner="commandes" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-11-11T03:07:33.003502" level="INFO">Opening browser 'edge' to base url 'about:blank'.</msg>
+<msg time="2025-11-11T03:14:09.133680" level="INFO">Opening browser 'edge' to base url 'about:blank'.</msg>
 <arg>about:blank</arg>
 <arg>${Browser_Name}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-11-11T03:07:33.002462" elapsed="3.489729"/>
+<status status="PASS" start="2025-11-11T03:14:09.133680" elapsed="2.088352"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-11-11T03:07:36.492191" elapsed="0.088458"/>
+<status status="PASS" start="2025-11-11T03:14:11.223032" elapsed="0.073185"/>
 </kw>
-<status status="PASS" start="2025-11-11T03:07:33.002462" elapsed="3.578187"/>
+<status status="PASS" start="2025-11-11T03:14:09.131556" elapsed="2.164661"/>
 </kw>
 <test id="s1-s1-t1" name="Main Test" line="14">
 <kw name="Charger_directement_la_page_Amazon" owner="PageAcceuil">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-11-11T03:07:36.584647" level="INFO">Opening url 'https://www.google.com/'</msg>
+<msg time="2025-11-11T03:14:11.306217" level="INFO">Opening url 'https://www.google.com/'</msg>
 <arg>${URL_Navigate}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-11-11T03:07:36.583648" elapsed="3.341161"/>
+<status status="PASS" start="2025-11-11T03:14:11.306217" elapsed="16.498807"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
 <arg>xpath:/html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1]</arg>
 <arg>timeout=30s</arg>
 <doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" start="2025-11-11T03:07:39.925858" elapsed="0.018790"/>
+<status status="PASS" start="2025-11-11T03:14:27.806020" elapsed="0.014929"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-11-11T03:07:39.944648" level="INFO">Typing text 'Amazon' into text field 'id=APjFqb'.</msg>
+<msg time="2025-11-11T03:14:27.820949" level="INFO">Typing text 'Amazon' into text field 'id=APjFqb'.</msg>
 <arg>id=APjFqb</arg>
 <arg>Amazon</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-11-11T03:07:39.944648" elapsed="0.108552"/>
+<status status="PASS" start="2025-11-11T03:14:27.820949" elapsed="0.098046"/>
 </kw>
 <kw name="Mouse Down" owner="SeleniumLibrary">
-<msg time="2025-11-11T03:07:40.053200" level="INFO">Simulating Mouse Down on element 'class=lnXdpd'.</msg>
+<msg time="2025-11-11T03:14:27.919994" level="INFO">Simulating Mouse Down on element 'class=lnXdpd'.</msg>
 <arg>class=lnXdpd</arg>
 <doc>Simulates pressing the left mouse button on the element ``locator``.</doc>
-<status status="PASS" start="2025-11-11T03:07:40.053200" elapsed="0.377420"/>
+<status status="PASS" start="2025-11-11T03:14:27.918995" elapsed="0.321500"/>
 </kw>
 <kw name="Mouse Up" owner="SeleniumLibrary">
-<msg time="2025-11-11T03:07:40.432619" level="INFO">Simulating Mouse Up on element 'class=lnXdpd'.</msg>
+<msg time="2025-11-11T03:14:28.240495" level="INFO">Simulating Mouse Up on element 'class=lnXdpd'.</msg>
 <arg>class=lnXdpd</arg>
 <doc>Simulates releasing the left mouse button on the element ``locator``.</doc>
-<status status="PASS" start="2025-11-11T03:07:40.431618" elapsed="0.383784"/>
+<status status="PASS" start="2025-11-11T03:14:28.240495" elapsed="0.300240"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-11-11T03:07:40.816402" level="INFO">Clicking button 'xpath:/html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1]'.</msg>
+<msg time="2025-11-11T03:14:28.541762" level="INFO">Clicking button 'xpath:/html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1]'.</msg>
 <arg>xpath:/html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-11-11T03:07:40.816402" elapsed="0.387676"/>
+<status status="PASS" start="2025-11-11T03:14:28.541762" elapsed="0.509766"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Images</arg>
 <arg>timeout=110s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-11-11T03:07:41.204078" elapsed="72.234734"/>
+<status status="PASS" start="2025-11-11T03:14:29.051528" elapsed="87.085690"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-11-11T03:08:53.438812" level="INFO">Clicking element 'xpath://*[@id="rso"]/div[1]/div/div/div/div/div/div/div/div[1]/div/span/a/div/div/div/div[2]/cite'.</msg>
+<msg time="2025-11-11T03:15:56.138217" level="INFO">Clicking element 'xpath://*[@id="rso"]/div[1]/div/div/div/div/div/div/div/div[1]/div/span/a/div/div/div/div[2]/cite'.</msg>
 <arg>xpath://*[@id="rso"]/div[1]/div/div/div/div/div/div/div/div[1]/div/span/a/div/div/div/div[2]/cite</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-11-11T03:08:53.438812" elapsed="21.558041"/>
+<status status="PASS" start="2025-11-11T03:15:56.138217" elapsed="53.830074"/>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>Ventes</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-11-11T03:09:14.997858" elapsed="0.028919"/>
+<status status="PASS" start="2025-11-11T03:16:49.969291" elapsed="0.072819"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-11-11T03:09:15.027876" level="INFO">La page Amazon a été chargée avec succès.</msg>
+<msg time="2025-11-11T03:16:50.043110" level="INFO">La page Amazon a été chargée avec succès.</msg>
 <arg>La page Amazon a été chargée avec succès.</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-11-11T03:09:15.026777" elapsed="0.001099"/>
+<status status="PASS" start="2025-11-11T03:16:50.043110" elapsed="0.000000"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-11-11T03:09:15.380213" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="page_acceuil_amazon.png"&gt;&lt;img src="page_acceuil_amazon.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-11-11T03:16:50.383196" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="page_acceuil_amazon.png"&gt;&lt;img src="page_acceuil_amazon.png" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>page_acceuil_amazon.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-11-11T03:09:15.027876" elapsed="0.352337"/>
+<status status="PASS" start="2025-11-11T03:16:50.044112" elapsed="0.339084"/>
 </kw>
-<status status="PASS" start="2025-11-11T03:07:36.583648" elapsed="98.796565"/>
+<status status="PASS" start="2025-11-11T03:14:11.305217" elapsed="159.077979"/>
 </kw>
 <kw name="Rechercher_un_produit" owner="PageAcceuil">
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-11-11T03:09:15.409530" level="INFO">Début de la recherche du produit.</msg>
+<msg time="2025-11-11T03:16:50.403829" level="INFO">Début de la recherche du produit.</msg>
 <arg>Début de la recherche du produit.</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-11-11T03:09:15.381217" elapsed="0.028313"/>
+<status status="PASS" start="2025-11-11T03:16:50.384337" elapsed="0.019492"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
-<msg time="2025-11-11T03:09:15.409530" level="INFO">Clicking button 'xpath://*[@id="sp-cc-accept"]'.</msg>
+<msg time="2025-11-11T03:16:50.404830" level="INFO">Clicking button 'xpath://*[@id="sp-cc-accept"]'.</msg>
 <arg>xpath://*[@id="sp-cc-accept"]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="PASS" start="2025-11-11T03:09:15.409530" elapsed="0.165378"/>
+<status status="PASS" start="2025-11-11T03:16:50.403829" elapsed="0.176178"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-11-11T03:09:15.575911" level="INFO">Clicking element 'xpath://*[@id="twotabsearchtextbox"]'.</msg>
+<msg time="2025-11-11T03:16:50.581416" level="INFO">Clicking element 'xpath://*[@id="twotabsearchtextbox"]'.</msg>
 <arg>xpath://*[@id="twotabsearchtextbox"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-11-11T03:09:15.574908" elapsed="0.177739"/>
+<status status="PASS" start="2025-11-11T03:16:50.580007" elapsed="0.222830"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2025-11-11T03:09:15.752647" level="INFO">Typing text 'ordinateur' into text field 'xpath://*[@id="twotabsearchtextbox"]'.</msg>
+<msg time="2025-11-11T03:16:50.803844" level="INFO">Typing text 'ordinateur' into text field 'xpath://*[@id="twotabsearchtextbox"]'.</msg>
 <arg>xpath://*[@id="twotabsearchtextbox"]</arg>
 <arg>ordinateur</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2025-11-11T03:09:15.752647" elapsed="0.192074"/>
+<status status="PASS" start="2025-11-11T03:16:50.802837" elapsed="0.165193"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-11-11T03:09:15.945721" level="INFO">Clicking element 'xpath://*[@id="nav-search-submit-button"]'.</msg>
+<msg time="2025-11-11T03:16:50.968030" level="INFO">Clicking element 'xpath://*[@id="nav-search-submit-button"]'.</msg>
 <arg>xpath://*[@id="nav-search-submit-button"]</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-11-11T03:09:15.945721" elapsed="27.574813"/>
+<status status="PASS" start="2025-11-11T03:16:50.968030" elapsed="69.279771"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2025-11-11T03:09:43.521634" level="INFO">Clicking element 'xpath://*[@id="a-autoid-2"]/span/i'.</msg>
+<msg time="2025-11-11T03:18:00.248800" level="INFO">Clicking element 'xpath://*[@id="a-autoid-2"]/span/i'.</msg>
+<msg time="2025-11-11T03:18:01.945015" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-11-11T03:18:01.946014" level="FAIL">ElementNotInteractableException: Message: element not interactable
+  (Session info: MicrosoftEdge=142.0.3595.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6fea09a65
+	0x7ff6fea09ac4
+	0x7ff6fe77d4c6
+	0x7ff6fe7c5402
+	0x7ff6fe7bb95e
+	0x7ff6fe7e3c8a
+	0x7ff6fe7bb3d5
+	0x7ff6fe7bb2ed
+	0x7ff6fe7bb3d5
+	0x7ff6fe7fe6f2
+	0x7ff6fe7ba8aa
+	0x7ff6fe7b9bd1
+	0x7ff6fe7ba6d3
+	0x7ff6fe8765f4
+	0x7ff6fe872b17
+	0x7ff6fea366c5
+	0x7ff6fea24b21
+	0x7ff6fea2cfc9
+	0x7ff6fea10fb4
+	0x7ff6fea11103
+	0x7ff6fe9fee36
+	0x7ffa3f15e8d7
+	0x7ffa3f92c53c
+</msg>
 <arg>xpath://*[@id="a-autoid-2"]/span/i</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2025-11-11T03:09:43.521634" elapsed="0.899518"/>
+<status status="FAIL" start="2025-11-11T03:18:00.247801" elapsed="1.728706">ElementNotInteractableException: Message: element not interactable
+  (Session info: MicrosoftEdge=142.0.3595.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6fea09a65
+	0x7ff6fea09ac4
+	0x7ff6fe77d4c6
+	0x7ff6fe7c5402
+	0x7ff6fe7bb95e
+	0x7ff6fe7e3c8a
+	0x7ff6fe7bb3d5
+	0x7ff6fe7bb2ed
+	0x7ff6fe7bb3d5
+	0x7ff6fe7fe6f2
+	0x7ff6fe7ba8aa
+	0x7ff6fe7b9bd1
+	0x7ff6fe7ba6d3
+	0x7ff6fe8765f4
+	0x7ff6fe872b17
+	0x7ff6fea366c5
+	0x7ff6fea24b21
+	0x7ff6fea2cfc9
+	0x7ff6fea10fb4
+	0x7ff6fea11103
+	0x7ff6fe9fee36
+	0x7ffa3f15e8d7
+	0x7ffa3f92c53c
+</status>
 </kw>
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>ordinateur</arg>
 <arg>timeout=10s</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2025-11-11T03:09:44.421152" elapsed="0.057704"/>
+<status status="NOT RUN" start="2025-11-11T03:18:01.976507" elapsed="0.000000"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2025-11-11T03:09:54.480899" level="INFO">Slept 10 seconds.</msg>
 <arg>10s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2025-11-11T03:09:44.478856" elapsed="10.002043"/>
+<status status="NOT RUN" start="2025-11-11T03:18:01.977506" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2025-11-11T03:09:54.481404" level="INFO">La recherche du produit a été effectuée avec succès.</msg>
 <arg>La recherche du produit a été effectuée avec succès.</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2025-11-11T03:09:54.481404" elapsed="0.000000"/>
+<status status="NOT RUN" start="2025-11-11T03:18:01.977506" elapsed="0.000000"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2025-11-11T03:10:29.369656" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="resultat_de_la_recherche.png"&gt;&lt;img src="resultat_de_la_recherche.png" width="800px"&gt;&lt;/a&gt;</msg>
 <arg>resultat_de_la_recherche.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2025-11-11T03:09:54.481404" elapsed="34.888252"/>
+<status status="NOT RUN" start="2025-11-11T03:18:01.977506" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2025-11-11T03:09:15.381217" elapsed="73.988439"/>
+<status status="FAIL" start="2025-11-11T03:16:50.383196" elapsed="71.596309">ElementNotInteractableException: Message: element not interactable
+  (Session info: MicrosoftEdge=142.0.3595.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6fea09a65
+	0x7ff6fea09ac4
+	0x7ff6fe77d4c6
+	0x7ff6fe7c5402
+	0x7ff6fe7bb95e
+	0x7ff6fe7e3c8a
+	0x7ff6fe7bb3d5
+	0x7ff6fe7bb2ed
+	0x7ff6fe7bb3d5
+	0x7ff6fe7fe6f2
+	0x7ff6fe7ba8aa
+	0x7ff6fe7b9bd1
+	0x7ff6fe7ba6d3
+	0x7ff6fe8765f4
+	0x7ff6fe872b17
+	0x7ff6fea366c5
+	0x7ff6fea24b21
+	0x7ff6fea2cfc9
+	0x7ff6fea10fb4
+	0x7ff6fea11103
+	0x7ff6fe9fee36
+	0x7ffa3f15e8d7
+	0x7ffa3f92c53c
+</status>
 </kw>
-<status status="PASS" start="2025-11-11T03:07:36.580649" elapsed="172.790007"/>
+<kw name="Ajouter_un_produit_au_panier" owner="PageAcceuil">
+<status status="NOT RUN" start="2025-11-11T03:18:01.982503" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2025-11-11T03:14:11.296217" elapsed="230.687285">ElementNotInteractableException: Message: element not interactable
+  (Session info: MicrosoftEdge=142.0.3595.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementnotinteractableexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6fea09a65
+	0x7ff6fea09ac4
+	0x7ff6fe77d4c6
+	0x7ff6fe7c5402
+	0x7ff6fe7bb95e
+	0x7ff6fe7e3c8a
+	0x7ff6fe7bb3d5
+	0x7ff6fe7bb2ed
+	0x7ff6fe7bb3d5
+	0x7ff6fe7fe6f2
+	0x7ff6fe7ba8aa
+	0x7ff6fe7b9bd1
+	0x7ff6fe7ba6d3
+	0x7ff6fe8765f4
+	0x7ff6fe872b17
+	0x7ff6fea366c5
+	0x7ff6fea24b21
+	0x7ff6fea2cfc9
+	0x7ff6fea10fb4
+	0x7ff6fea11103
+	0x7ff6fe9fee36
+	0x7ffa3f15e8d7
+	0x7ffa3f92c53c
+</status>
 </test>
 <kw name="Fermeture_du_navigateur" owner="commandes" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-11-11T03:10:29.391166" elapsed="4.625053"/>
+<status status="PASS" start="2025-11-11T03:18:01.991500" elapsed="3.854076"/>
 </kw>
-<status status="PASS" start="2025-11-11T03:10:29.390156" elapsed="4.626063"/>
+<status status="PASS" start="2025-11-11T03:18:01.990499" elapsed="3.856214"/>
 </kw>
 <doc>Simple example using SeleniumLibrary.</doc>
-<status status="PASS" start="2025-11-11T03:07:32.447599" elapsed="181.568620"/>
+<status status="FAIL" start="2025-11-11T03:14:08.669888" elapsed="237.176825"/>
 </suite>
-<status status="PASS" start="2025-11-11T03:07:32.396111" elapsed="181.624097"/>
+<status status="FAIL" start="2025-11-11T03:14:08.620874" elapsed="237.229315"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
-<stat name="Main" id="s1-s1" pass="1" fail="0" skip="0">Tests.Main</stat>
+<stat name="Tests" id="s1" pass="0" fail="1" skip="0">Tests</stat>
+<stat name="Main" id="s1-s1" pass="0" fail="1" skip="0">Tests.Main</stat>
 </suite>
 </statistics>
 <errors>

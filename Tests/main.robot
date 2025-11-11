@@ -14,3 +14,4 @@ Suite Teardown  commandes.Fermeture_du_navigateur
 Main Test
     Charger_directement_la_page_Amazon
     Rechercher_un_produit
+    Ajouter_un_produit_au_panier
