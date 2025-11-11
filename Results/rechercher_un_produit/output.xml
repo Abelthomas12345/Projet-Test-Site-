@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.12.7 on win32)" generated="2025-11-11T03:07:32.393074" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\ABEL\Desktop\SUPPORT DE COURS GLO4\Projet  Test_et_Validation\Projet_robot_Framework\Projet-Test-Site-\tests">
+<suite id="s1-s1" name="Main" source="C:\Users\ABEL\Desktop\SUPPORT DE COURS GLO4\Projet  Test_et_Validation\Projet_robot_Framework\Projet-Test-Site-\tests\main.robot">
+<kw name="ouverture_du_navigateur" owner="commandes" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-11T03:07:33.003502" level="INFO">Opening browser 'edge' to base url 'about:blank'.</msg>
+<arg>about:blank</arg>
+<arg>${Browser_Name}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-11T03:07:33.002462" elapsed="3.489729"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-11-11T03:07:36.492191" elapsed="0.088458"/>
+</kw>
+<status status="PASS" start="2025-11-11T03:07:33.002462" elapsed="3.578187"/>
+</kw>
+<test id="s1-s1-t1" name="Main Test" line="14">
+<kw name="Charger_directement_la_page_Amazon" owner="PageAcceuil">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-11-11T03:07:36.584647" level="INFO">Opening url 'https://www.google.com/'</msg>
+<arg>${URL_Navigate}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2025-11-11T03:07:36.583648" elapsed="3.341161"/>
+</kw>
+<kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
+<arg>xpath:/html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1]</arg>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-11T03:07:39.925858" elapsed="0.018790"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-11T03:07:39.944648" level="INFO">Typing text 'Amazon' into text field 'id=APjFqb'.</msg>
+<arg>id=APjFqb</arg>
+<arg>Amazon</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-11T03:07:39.944648" elapsed="0.108552"/>
+</kw>
+<kw name="Mouse Down" owner="SeleniumLibrary">
+<msg time="2025-11-11T03:07:40.053200" level="INFO">Simulating Mouse Down on element 'class=lnXdpd'.</msg>
+<arg>class=lnXdpd</arg>
+<doc>Simulates pressing the left mouse button on the element ``locator``.</doc>
+<status status="PASS" start="2025-11-11T03:07:40.053200" elapsed="0.377420"/>
+</kw>
+<kw name="Mouse Up" owner="SeleniumLibrary">
+<msg time="2025-11-11T03:07:40.432619" level="INFO">Simulating Mouse Up on element 'class=lnXdpd'.</msg>
+<arg>class=lnXdpd</arg>
+<doc>Simulates releasing the left mouse button on the element ``locator``.</doc>
+<status status="PASS" start="2025-11-11T03:07:40.431618" elapsed="0.383784"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-11-11T03:07:40.816402" level="INFO">Clicking button 'xpath:/html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1]'.</msg>
+<arg>xpath:/html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-11T03:07:40.816402" elapsed="0.387676"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Images</arg>
+<arg>timeout=110s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-11T03:07:41.204078" elapsed="72.234734"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-11T03:08:53.438812" level="INFO">Clicking element 'xpath://*[@id="rso"]/div[1]/div/div/div/div/div/div/div/div[1]/div/span/a/div/div/div/div[2]/cite'.</msg>
+<arg>xpath://*[@id="rso"]/div[1]/div/div/div/div/div/div/div/div[1]/div/span/a/div/div/div/div[2]/cite</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-11T03:08:53.438812" elapsed="21.558041"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Ventes</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-11T03:09:14.997858" elapsed="0.028919"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-11T03:09:15.027876" level="INFO">La page Amazon a été chargée avec succès.</msg>
+<arg>La page Amazon a été chargée avec succès.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-11T03:09:15.026777" elapsed="0.001099"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-11T03:09:15.380213" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="page_acceuil_amazon.png"&gt;&lt;img src="page_acceuil_amazon.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>page_acceuil_amazon.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-11T03:09:15.027876" elapsed="0.352337"/>
+</kw>
+<status status="PASS" start="2025-11-11T03:07:36.583648" elapsed="98.796565"/>
+</kw>
+<kw name="Rechercher_un_produit" owner="PageAcceuil">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-11T03:09:15.409530" level="INFO">Début de la recherche du produit.</msg>
+<arg>Début de la recherche du produit.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-11T03:09:15.381217" elapsed="0.028313"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-11-11T03:09:15.409530" level="INFO">Clicking button 'xpath://*[@id="sp-cc-accept"]'.</msg>
+<arg>xpath://*[@id="sp-cc-accept"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-11T03:09:15.409530" elapsed="0.165378"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-11T03:09:15.575911" level="INFO">Clicking element 'xpath://*[@id="twotabsearchtextbox"]'.</msg>
+<arg>xpath://*[@id="twotabsearchtextbox"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-11T03:09:15.574908" elapsed="0.177739"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-11-11T03:09:15.752647" level="INFO">Typing text 'ordinateur' into text field 'xpath://*[@id="twotabsearchtextbox"]'.</msg>
+<arg>xpath://*[@id="twotabsearchtextbox"]</arg>
+<arg>ordinateur</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-11T03:09:15.752647" elapsed="0.192074"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-11T03:09:15.945721" level="INFO">Clicking element 'xpath://*[@id="nav-search-submit-button"]'.</msg>
+<arg>xpath://*[@id="nav-search-submit-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-11T03:09:15.945721" elapsed="27.574813"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-11T03:09:43.521634" level="INFO">Clicking element 'xpath://*[@id="a-autoid-2"]/span/i'.</msg>
+<arg>xpath://*[@id="a-autoid-2"]/span/i</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-11-11T03:09:43.521634" elapsed="0.899518"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>ordinateur</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-11T03:09:44.421152" elapsed="0.057704"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-11-11T03:09:54.480899" level="INFO">Slept 10 seconds.</msg>
+<arg>10s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-11-11T03:09:44.478856" elapsed="10.002043"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-11-11T03:09:54.481404" level="INFO">La recherche du produit a été effectuée avec succès.</msg>
+<arg>La recherche du produit a été effectuée avec succès.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-11-11T03:09:54.481404" elapsed="0.000000"/>
+</kw>
+<kw name="Capture Page Screenshot" owner="SeleniumLibrary">
+<msg time="2025-11-11T03:10:29.369656" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="resultat_de_la_recherche.png"&gt;&lt;img src="resultat_de_la_recherche.png" width="800px"&gt;&lt;/a&gt;</msg>
+<arg>resultat_de_la_recherche.png</arg>
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<status status="PASS" start="2025-11-11T03:09:54.481404" elapsed="34.888252"/>
+</kw>
+<status status="PASS" start="2025-11-11T03:09:15.381217" elapsed="73.988439"/>
+</kw>
+<status status="PASS" start="2025-11-11T03:07:36.580649" elapsed="172.790007"/>
+</test>
+<kw name="Fermeture_du_navigateur" owner="commandes" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-11T03:10:29.391166" elapsed="4.625053"/>
+</kw>
+<status status="PASS" start="2025-11-11T03:10:29.390156" elapsed="4.626063"/>
+</kw>
+<doc>Simple example using SeleniumLibrary.</doc>
+<status status="PASS" start="2025-11-11T03:07:32.447599" elapsed="181.568620"/>
+</suite>
+<status status="PASS" start="2025-11-11T03:07:32.396111" elapsed="181.624097"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="Main" id="s1-s1" pass="1" fail="0" skip="0">Tests.Main</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
