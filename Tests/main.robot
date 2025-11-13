@@ -6,6 +6,7 @@ Library  SeleniumLibrary
 
 Resource  ../ressources/commandes.robot
 Resource  ../ressources/PO/PageAcceuil.robot
+Resource  ../ressources/PO/PageProduit.robot
 
 Suite Setup  commandes.ouverture_du_navigateur
 Suite Teardown  commandes.Fermeture_du_navigateur

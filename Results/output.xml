@@ -1,196 +1,115 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.3.2 (Python 3.13.2 on win32)" generated="2025-11-10T19:26:31.207915" rpa="false" schemaversion="5">
-<suite id="s1" name="Projet-Test-Site-" source="C:\Users\ABEL\Desktop\SUPPORT DE COURS GLO4\Projet  Test_et_Validation\Projet_robot_Framework\Projet-Test-Site-">
-<suite id="s1-s1" name="Tests" source="C:\Users\ABEL\Desktop\SUPPORT DE COURS GLO4\Projet  Test_et_Validation\Projet_robot_Framework\Projet-Test-Site-\Tests">
-<suite id="s1-s1-s1" name="Main" source="C:\Users\ABEL\Desktop\SUPPORT DE COURS GLO4\Projet  Test_et_Validation\Projet_robot_Framework\Projet-Test-Site-\Tests\main.robot">
+<robot generator="Robot 7.3.2 (Python 3.13.2 on win32)" generated="2025-11-13T02:01:57.786627" rpa="false" schemaversion="5">
+<suite id="s1" name="Projet-Test-Site-" source="C:\Users\ABEL\Desktop\SUPPORT DE COURS GLO4\Cours de TEST ET VALIDATION\Projet  Test_et_Validation\Projet_robot_Framework\Projet-Test-Site-">
+<suite id="s1-s1" name="Tests" source="C:\Users\ABEL\Desktop\SUPPORT DE COURS GLO4\Cours de TEST ET VALIDATION\Projet  Test_et_Validation\Projet_robot_Framework\Projet-Test-Site-\Tests">
+<suite id="s1-s1-s1" name="Main" source="C:\Users\ABEL\Desktop\SUPPORT DE COURS GLO4\Cours de TEST ET VALIDATION\Projet  Test_et_Validation\Projet_robot_Framework\Projet-Test-Site-\Tests\main.robot">
 <kw name="ouverture_du_navigateur" owner="commandes" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2025-11-10T19:26:31.779776" level="INFO">Opening browser 'edge' to base url 'about:blank'.</msg>
+<msg time="2025-11-13T02:01:59.597861" level="INFO">Opening browser 'edge' to base url 'about:blank'.</msg>
+<msg time="2025-11-13T02:02:08.167057" level="WARN">Exception managing MicrosoftEdge: error sending request for url (https://msedgedriver.microsoft.com/LATEST_RELEASE_142_WINDOWS)</msg>
+<msg time="2025-11-13T02:02:08.183241" level="WARN">Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event)</msg>
 <arg>about:blank</arg>
 <arg>${Browser_Name}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2025-11-10T19:26:31.779206" elapsed="2.251560"/>
+<status status="PASS" start="2025-11-13T02:01:59.597049" elapsed="16.154021"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2025-11-10T19:26:34.031498" elapsed="0.114021"/>
+<status status="PASS" start="2025-11-13T02:02:15.751525" elapsed="0.316196"/>
 </kw>
-<status status="PASS" start="2025-11-10T19:26:31.777944" elapsed="2.368073"/>
+<status status="PASS" start="2025-11-13T02:01:59.595317" elapsed="16.472772"/>
 </kw>
-<test id="s1-s1-s1-t1" name="Main Test" line="14">
+<test id="s1-s1-s1-t1" name="Main Test" line="15">
 <kw name="Charger_directement_la_page_Amazon" owner="PageAcceuil">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2025-11-10T19:26:34.162567" level="INFO">Opening url 'https://www.google.com/'</msg>
+<msg time="2025-11-13T02:02:16.086163" level="INFO">Opening url 'https://www.google.com/'</msg>
 <arg>${URL_Navigate}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2025-11-10T19:26:34.161841" elapsed="112.206210"/>
+<status status="PASS" start="2025-11-13T02:02:16.085543" elapsed="89.039132"/>
 </kw>
 <kw name="Wait Until Page Contains Element" owner="SeleniumLibrary">
-<msg time="2025-11-10T19:28:26.615728" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg time="2025-11-10T19:28:26.616504" level="FAIL">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression /html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1] timeout=30s because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '/html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1] timeout=30s' is not a valid XPath expression.
-  (Session info: MicrosoftEdge=142.0.3595.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
-Stacktrace:
-Symbols not available. Dumping unresolved backtrace:
-	0x7ff6b22a9a65
-	0x7ff6b22a9ac4
-	0x7ff6b245b8a8
-	0x7ff6b202333f
-	0x7ff6b20256cf
-	0x7ff6b202578f
-	0x7ff6b2063c0e
-	0x7ff6b206431b
-	0x7ff6b20a07a7
-	0x7ff6b205b3d5
-	0x7ff6b209e6f2
-	0x7ff6b205a8aa
-	0x7ff6b2059bd1
-	0x7ff6b205a6d3
-	0x7ff6b21165f4
-	0x7ff6b2112b17
-	0x7ff6b22d66c5
-	0x7ff6b22c4b21
-	0x7ff6b22ccfc9
-	0x7ff6b22b0fb4
-	0x7ff6b22b1103
-	0x7ff6b229ee36
-	0x7ffa3f15e8d7
-	0x7ffa3f92c53c
-</msg>
-<arg>xpath:/html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1] timeout=30s</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="FAIL" start="2025-11-10T19:28:26.369664" elapsed="0.367702">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression /html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1] timeout=30s because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '/html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1] timeout=30s' is not a valid XPath expression.
-  (Session info: MicrosoftEdge=142.0.3595.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
-Stacktrace:
-Symbols not available. Dumping unresolved backtrace:
-	0x7ff6b22a9a65
-	0x7ff6b22a9ac4
-	0x7ff6b245b8a8
-	0x7ff6b202333f
-	0x7ff6b20256cf
-	0x7ff6b202578f
-	0x7ff6b2063c0e
-	0x7ff6b206431b
-	0x7ff6b20a07a7
-	0x7ff6b205b3d5
-	0x7ff6b209e6f2
-	0x7ff6b205a8aa
-	0x7ff6b2059bd1
-	0x7ff6b205a6d3
-	0x7ff6b21165f4
-	0x7ff6b2112b17
-	0x7ff6b22d66c5
-	0x7ff6b22c4b21
-	0x7ff6b22ccfc9
-	0x7ff6b22b0fb4
-	0x7ff6b22b1103
-	0x7ff6b229ee36
-	0x7ffa3f15e8d7
-	0x7ffa3f92c53c
-</status>
-</kw>
-<kw name="Clear Element Text" owner="SeleniumLibrary">
 <arg>xpath:/html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1]</arg>
-<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-11-10T19:28:26.737646" elapsed="0.000237"/>
+<arg>timeout=30s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-13T02:03:45.125127" elapsed="0.026049"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<arg>xpath:/html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1]</arg>
+<msg time="2025-11-13T02:03:45.152380" level="INFO">Typing text 'Amazon' into text field 'id=APjFqb'.</msg>
+<arg>id=APjFqb</arg>
 <arg>Amazon</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-11-10T19:28:26.738041" elapsed="0.000185"/>
+<status status="PASS" start="2025-11-13T02:03:45.151710" elapsed="0.232635"/>
+</kw>
+<kw name="Mouse Down" owner="SeleniumLibrary">
+<msg time="2025-11-13T02:03:45.385549" level="INFO">Simulating Mouse Down on element 'class=lnXdpd'.</msg>
+<arg>class=lnXdpd</arg>
+<doc>Simulates pressing the left mouse button on the element ``locator``.</doc>
+<status status="PASS" start="2025-11-13T02:03:45.384772" elapsed="0.378956"/>
+</kw>
+<kw name="Mouse Up" owner="SeleniumLibrary">
+<msg time="2025-11-13T02:03:45.764465" level="INFO">Simulating Mouse Up on element 'class=lnXdpd'.</msg>
+<arg>class=lnXdpd</arg>
+<doc>Simulates releasing the left mouse button on the element ``locator``.</doc>
+<status status="PASS" start="2025-11-13T02:03:45.764017" elapsed="0.292340"/>
 </kw>
 <kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-11-13T02:03:46.057328" level="INFO">Clicking button 'xpath:/html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1]'.</msg>
 <arg>xpath:/html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1]</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<status status="NOT RUN" start="2025-11-10T19:28:26.738376" elapsed="0.000178"/>
+<status status="PASS" start="2025-11-13T02:03:46.056743" elapsed="62.002572"/>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Images</arg>
+<arg>timeout=110s</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2025-11-13T02:04:48.061752" elapsed="185.058419"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-11-13T02:07:53.121508" level="INFO">Clicking element 'xpath://*[@id="rso"]/div[1]/div/div/div/div/div/div/div/div[1]/div/span/a/div/div/div/div[2]/cite'.</msg>
+<msg time="2025-11-13T02:11:17.448131" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-11-13T02:11:17.448988" level="FAIL">ReadTimeoutError: HTTPConnectionPool(host='localhost', port=10888): Read timed out. (read timeout=120)</msg>
+<arg>xpath://*[@id="rso"]/div[1]/div/div/div/div/div/div/div/div[1]/div/span/a/div/div/div/div[2]/cite</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2025-11-13T02:07:53.120658" elapsed="204.617307">ReadTimeoutError: HTTPConnectionPool(host='localhost', port=10888): Read timed out. (read timeout=120)</status>
+</kw>
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>Ventes</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" start="2025-11-13T02:11:17.738359" elapsed="0.000256"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
 <arg>La page Amazon a été chargée avec succès.</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" start="2025-11-10T19:28:26.738715" elapsed="0.000181"/>
+<status status="NOT RUN" start="2025-11-13T02:11:17.738776" elapsed="0.000195"/>
 </kw>
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
 <arg>page_acceuil_amazon.png</arg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="NOT RUN" start="2025-11-10T19:28:26.739050" elapsed="0.000180"/>
+<status status="NOT RUN" start="2025-11-13T02:11:17.739134" elapsed="0.000176"/>
 </kw>
-<status status="FAIL" start="2025-11-10T19:26:34.155848" elapsed="112.583582">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression /html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1] timeout=30s because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '/html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1] timeout=30s' is not a valid XPath expression.
-  (Session info: MicrosoftEdge=142.0.3595.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
-Stacktrace:
-Symbols not available. Dumping unresolved backtrace:
-	0x7ff6b22a9a65
-	0x7ff6b22a9ac4
-	0x7ff6b245b8a8
-	0x7ff6b202333f
-	0x7ff6b20256cf
-	0x7ff6b202578f
-	0x7ff6b2063c0e
-	0x7ff6b206431b
-	0x7ff6b20a07a7
-	0x7ff6b205b3d5
-	0x7ff6b209e6f2
-	0x7ff6b205a8aa
-	0x7ff6b2059bd1
-	0x7ff6b205a6d3
-	0x7ff6b21165f4
-	0x7ff6b2112b17
-	0x7ff6b22d66c5
-	0x7ff6b22c4b21
-	0x7ff6b22ccfc9
-	0x7ff6b22b0fb4
-	0x7ff6b22b1103
-	0x7ff6b229ee36
-	0x7ffa3f15e8d7
-	0x7ffa3f92c53c
-</status>
+<status status="FAIL" start="2025-11-13T02:02:16.084676" elapsed="541.654894">ReadTimeoutError: HTTPConnectionPool(host='localhost', port=10888): Read timed out. (read timeout=120)</status>
 </kw>
-<status status="FAIL" start="2025-11-10T19:26:34.146377" elapsed="112.593491">InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression /html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1] timeout=30s because of the following error:
-SyntaxError: Failed to execute 'evaluate' on 'Document': The string '/html/body/div[2]/div[4]/form/div[1]/div[1]/div[3]/center/input[1] timeout=30s' is not a valid XPath expression.
-  (Session info: MicrosoftEdge=142.0.3595.69); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalidselectorexception
-Stacktrace:
-Symbols not available. Dumping unresolved backtrace:
-	0x7ff6b22a9a65
-	0x7ff6b22a9ac4
-	0x7ff6b245b8a8
-	0x7ff6b202333f
-	0x7ff6b20256cf
-	0x7ff6b202578f
-	0x7ff6b2063c0e
-	0x7ff6b206431b
-	0x7ff6b20a07a7
-	0x7ff6b205b3d5
-	0x7ff6b209e6f2
-	0x7ff6b205a8aa
-	0x7ff6b2059bd1
-	0x7ff6b205a6d3
-	0x7ff6b21165f4
-	0x7ff6b2112b17
-	0x7ff6b22d66c5
-	0x7ff6b22c4b21
-	0x7ff6b22ccfc9
-	0x7ff6b22b0fb4
-	0x7ff6b22b1103
-	0x7ff6b229ee36
-	0x7ffa3f15e8d7
-	0x7ffa3f92c53c
-</status>
+<kw name="Rechercher_un_produit" owner="PageProduit">
+<status status="NOT RUN" start="2025-11-13T02:11:17.740025" elapsed="0.000306"/>
+</kw>
+<kw name="Ajouter_un_produit_au_panier" owner="PageProduit">
+<status status="NOT RUN" start="2025-11-13T02:11:17.740652" elapsed="0.000220"/>
+</kw>
+<status status="FAIL" start="2025-11-13T02:02:16.068357" elapsed="541.672810">ReadTimeoutError: HTTPConnectionPool(host='localhost', port=10888): Read timed out. (read timeout=120)</status>
 </test>
 <kw name="Fermeture_du_navigateur" owner="commandes" type="TEARDOWN">
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2025-11-10T19:28:26.755191" elapsed="3.440983"/>
+<status status="PASS" start="2025-11-13T02:11:17.766550" elapsed="2.938993"/>
 </kw>
-<status status="PASS" start="2025-11-10T19:28:26.754644" elapsed="3.441931"/>
+<status status="PASS" start="2025-11-13T02:11:17.765995" elapsed="2.939904"/>
 </kw>
 <doc>Simple example using SeleniumLibrary.</doc>
-<status status="FAIL" start="2025-11-10T19:26:31.282325" elapsed="118.914482"/>
+<status status="FAIL" start="2025-11-13T02:01:57.925794" elapsed="562.780299"/>
 </suite>
-<status status="FAIL" start="2025-11-10T19:26:31.272821" elapsed="118.936052"/>
+<status status="FAIL" start="2025-11-13T02:01:57.903591" elapsed="562.807511"/>
 </suite>
-<status status="FAIL" start="2025-11-10T19:26:31.218781" elapsed="119.016203"/>
+<status status="FAIL" start="2025-11-13T02:01:57.798147" elapsed="562.917019"/>
 </suite>
 <statistics>
 <total>
@@ -205,5 +124,7 @@ Symbols not available. Dumping unresolved backtrace:
 </suite>
 </statistics>
 <errors>
+<msg time="2025-11-13T02:02:08.167057" level="WARN">Exception managing MicrosoftEdge: error sending request for url (https://msedgedriver.microsoft.com/LATEST_RELEASE_142_WINDOWS)</msg>
+<msg time="2025-11-13T02:02:08.183241" level="WARN">Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event)</msg>
 </errors>
 </robot>

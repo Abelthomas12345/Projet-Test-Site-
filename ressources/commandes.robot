@@ -8,7 +8,6 @@ Library  SeleniumLibrary
 Resource  variables.robot
 
 *** Keywords ***
-
 ouverture_du_navigateur
     Open Browser  about:blank  ${Browser_Name}
     
